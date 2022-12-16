@@ -1,0 +1,1 @@
+# TEMPLATE: Place your template in here. This will be called by the templatefile function. For more info: https://developer.hashicorp.com/terraform/language/functions/templatefile
