@@ -20,7 +20,7 @@ terraform {
 
 # TEMPLATE: Replace sample resource described below with your own.
 provider "equinix" {
-  auth_token    = var.example_auth_token
+  auth_token = var.example_auth_token
 }
 
 # TEMPLATE: Replace sample resource described below with your own.
