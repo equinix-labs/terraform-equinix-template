@@ -3,5 +3,6 @@ module "example" {
   source = "../../"
 
   # Define any required variables
-  example = "example"
+  example_project_id = "my_project_id"
+  example_auth_token = "my_auth_token"
 }

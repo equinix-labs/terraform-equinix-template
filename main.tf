@@ -6,25 +6,25 @@
 # TEMPLATE: and dependency inversion (https://www.terraform.io/docs/language/modules/develop/composition.html).
 # TEMPLATE:
 
-# TEMPLATE: Replace sample resource described below with your own.
+# TEMPLATE: Replace sample provider described below with your own.
 terraform {
   required_version = ">= 1.3"
 
   required_providers {
     equinix = {
       source  = "equinix/equinix"
-      version = ">= 1.8.1"
+      version = ">= 1.8.0"
     }
   }
 }
 
-# TEMPLATE: Replace sample resource described below with your own.
+# TEMPLATE: Replace sample provider described below with your own.
 provider "equinix" {
   auth_token = var.example_auth_token
 }
 
 # TEMPLATE: Replace sample resource described below with your own.
-resource "equinix_metal_device" "example" {
+resource "equinix_metal_device" "example_device" {
   hostname         = "example-device"
   plan             = "c3.small.x86"
   metro            = "sv"
@@ -33,10 +33,13 @@ resource "equinix_metal_device" "example" {
   project_id       = var.example_project_id
 }
 
+# TEMPLATE: Run `terraform get` to install local module
+# TEMPLATE: Run `terraform init` to initialize backends and install plugins
 # TEMPLATE: Replace sample in-line local module described below with your own.
-module "inline-module" {
+# TEMPLATE
+module "inline_module" {
   source = "./modules/inline-module"
 
   # Define any required variables
-  example = "example"
+  inline_module_project_id = var.example_project_id
 }

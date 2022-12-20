@@ -5,3 +5,10 @@
 # TEMPLATE: https://www.terraform.io/docs/language/values/variables.html
 # TEMPLATE: https://www.terraform.io/docs/language/expressions/types.html
 #
+
+# TEMPLATE: Replace sample variable described below with your own.
+variable "inline_module_project_id" {
+  type        = string
+  description = "The example project id value defines what will be included in the example resource in main.tf. This example is descriptive."
+  sensitive   = false
+}

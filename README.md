@@ -60,7 +60,7 @@ To view examples for how you can leverage this module, please see the [examples]
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3 |
-| <a name="requirement_equinix"></a> [equinix](#requirement\_equinix) | >= 1.8.1 |
+| <a name="requirement_equinix"></a> [equinix](#requirement\_equinix) | >= 1.8.0 |
 
 ## Providers
 
@@ -91,7 +91,8 @@ To view examples for how you can leverage this module, please see the [examples]
 
 | Name | Description |
 |------|-------------|
-| <a name="output_example"></a> [example](#output\_example) | The example output. In practice, output value reference implicit resource attributes declared in main.tf |
+| <a name="output_example_device_hostname"></a> [example\_device\_hostname](#output\_example\_device\_hostname) | The example output. In practice, output value reference implicit resource attributes declared in main.tf |
+| <a name="output_example_gateway_id"></a> [example\_gateway\_id](#output\_example\_gateway\_id) | The example output. In practice, output value reference implicit resource attributes declared in main.tf |
 <!-- END_TF_DOCS -->
 ## Contributing
 

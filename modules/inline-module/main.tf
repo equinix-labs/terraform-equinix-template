@@ -4,3 +4,29 @@
 # TEMPLATE:
 # TEMPLATE: When main.tf becomes unwieldy, consider submodules (https://www.terraform.io/docs/language/modules/develop/structure.html) 
 # TEMPLATE: and dependency inversion (https://www.terraform.io/docs/language/modules/develop/composition.html).
+
+# TEMPLATE: Replace sample provider described below with your own.
+terraform {
+  required_version = ">= 1.3"
+
+  required_providers {
+    equinix = {
+      source  = "equinix/equinix"
+      version = ">= 1.8.0"
+    }
+  }
+}
+
+# TEMPLATE: Replace sample resource described below with your own.
+resource "equinix_metal_vlan" "inline_module_vlan" {
+  description = "VLAN in SV"
+  metro       = "sv"
+  project_id  = var.inline_module_project_id
+}
+
+# TEMPLATE: Replace sample resource described below with your own.
+resource "equinix_metal_gateway" "inline_module_gateway" {
+  project_id               = var.inline_module_project_id
+  vlan_id                  = equinix_metal_vlan.inline_module_vlan.id
+  private_ipv4_subnet_size = 8
+}

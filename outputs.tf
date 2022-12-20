@@ -10,8 +10,16 @@
 # TEMPLATE:
 
 # TEMPLATE: Replace sample output described below with your own.
-output "example" {
+output "example_device_hostname" {
   description = "The example output. In practice, output value reference implicit resource attributes declared in main.tf"
   sensitive   = false
-  value       = equinix_metal_device.example-device.hostname
+  value       = equinix_metal_device.example_device.hostname
 }
+
+# TEMPLATE: Replace sample output described below with your own.
+output "example_gateway_id" {
+  description = "The example output. In practice, output value reference implicit resource attributes declared in main.tf"
+  sensitive   = false
+  value       = module.inline_module.inline_module_gateway_id
+}
+
