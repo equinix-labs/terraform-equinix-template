@@ -10,6 +10,11 @@
 terraform {
   required_version = ">= 1.3"
 
+  provider_meta "equinix" {
+    # TEMPLATE: Replace the module name with your own.
+    module_name = "template"
+  }
+
   required_providers {
     equinix = {
       source  = "equinix/equinix"
@@ -20,7 +25,7 @@ terraform {
 
 # TEMPLATE: Replace sample provider described below with your own.
 provider "equinix" {
-  auth_token = var.example_auth_token
+  auth_token = var.metal_auth_token
 }
 
 # TEMPLATE: Replace sample resource described below with your own.
@@ -30,7 +35,7 @@ resource "equinix_metal_device" "example_device" {
   metro            = "sv"
   operating_system = "ubuntu_20_04"
   billing_cycle    = "hourly"
-  project_id       = var.example_project_id
+  project_id       = var.metal_project_id
 }
 
 # TEMPLATE: Run `terraform get` to install local module
@@ -41,5 +46,5 @@ module "inline_module" {
   source = "./modules/inline-module"
 
   # Define any required variables
-  inline_module_project_id = var.example_project_id
+  inline_module_project_id = var.metal_project_id
 }
