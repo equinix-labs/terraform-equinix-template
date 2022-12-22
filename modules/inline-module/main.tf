@@ -9,6 +9,11 @@
 terraform {
   required_version = ">= 1.3"
 
+  provider_meta "equinix" {
+    # TEMPLATE: Replace the module name with your own.
+    module_name = "inline-module"
+  }
+
   required_providers {
     equinix = {
       source  = "equinix/equinix"
