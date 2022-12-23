@@ -3,5 +3,6 @@ module "example" {
   source = "../../"
 
   # Define any required variables
-  example = "example"
+  metal_project_id = var.example_metal_project_id
+  metal_auth_token = var.example_metal_auth_token
 }

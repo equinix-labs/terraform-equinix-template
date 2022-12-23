@@ -4,7 +4,6 @@
 # TEMPLATE:
 # TEMPLATE: When main.tf becomes unwieldy, consider submodules (https://www.terraform.io/docs/language/modules/develop/structure.html) 
 # TEMPLATE: and dependency inversion (https://www.terraform.io/docs/language/modules/develop/composition.html).
-# TEMPLATE:
 
 # TEMPLATE: Replace sample provider described below with your own.
 terraform {
@@ -12,7 +11,7 @@ terraform {
 
   provider_meta "equinix" {
     # TEMPLATE: Replace the module name with your own.
-    module_name = "template"
+    module_name = "inline-module"
   }
 
   required_providers {
@@ -23,28 +22,16 @@ terraform {
   }
 }
 
-# TEMPLATE: Replace sample provider described below with your own.
-provider "equinix" {
-  auth_token = var.metal_auth_token
+# TEMPLATE: Replace sample resource described below with your own.
+resource "equinix_metal_vlan" "inline_module_vlan" {
+  description = "VLAN in SV"
+  metro       = "sv"
+  project_id  = var.inline_module_project_id
 }
 
 # TEMPLATE: Replace sample resource described below with your own.
-resource "equinix_metal_device" "example_device" {
-  hostname         = "example-device"
-  plan             = "c3.small.x86"
-  metro            = "sv"
-  operating_system = "ubuntu_20_04"
-  billing_cycle    = "hourly"
-  project_id       = var.metal_project_id
-}
-
-# TEMPLATE: Run `terraform get` to install local module
-# TEMPLATE: Run `terraform init` to initialize backends and install plugins
-# TEMPLATE: Replace sample in-line local module described below with your own.
-# TEMPLATE
-module "inline_module" {
-  source = "./modules/inline-module"
-
-  # Define any required variables
-  inline_module_project_id = var.metal_project_id
+resource "equinix_metal_gateway" "inline_module_gateway" {
+  project_id               = var.inline_module_project_id
+  vlan_id                  = equinix_metal_vlan.inline_module_vlan.id
+  private_ipv4_subnet_size = 8
 }

@@ -1,3 +1,22 @@
+# OSX leaves these everywhere on SMB shares
+._*
+
+# OSX trash
+**/.DS_Store
+*.pyc*
+
+# Emacs save files
+*~
+\#*\#
+.\#*
+
+# Vim-related files
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+
 # Local .terraform directories
 **/.terraform/*
 .terraform*
@@ -29,7 +48,7 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
-terraform.tfvars
+**/terraform.tfvars
 util/keys
 
 *-kubeconfig
