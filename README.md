@@ -1,7 +1,7 @@
 # terraform-equinix-template
 
 <!-- TEMPLATE: Review all "TEMPLATE" comments and remove them when applied. -->
-<!-- TEMPLATE: replace "template" with the name of your project. The prefix "terraform-equinix-" informs the Terraform registry that this project is a Terraform module associated with the Equinix provider, Oreserve this prefix.  "terraform-metal-" may also be used for Equinix Metal modules, but "terraform-equinix-" will work too. -->
+<!-- TEMPLATE: replace "template" with the name of your project. The prefix "terraform-equinix-" informs the Terraform registry that this project is a Terraform module associated with the Equinix provider, preserve this prefix. -->
 [![Experimental](https://img.shields.io/badge/Stability-Experimental-red.svg)](https://github.com/equinix-labs/standards#about-uniform-standards)
 [![run-pre-commit-hooks](https://github.com/equinix-labs/terraform-equinix-template/actions/workflows/pre-commit.yaml/badge.svg)](https://github.com/equinix-labs/terraform-equinix-template/actions/workflows/pre-commit.yaml)
 [![generate-terraform-docs](https://github.com/equinix-labs/terraform-equinix-template/actions/workflows/documentation.yaml/badge.svg)](https://github.com/equinix-labs/terraform-equinix-template/actions/workflows/documentation.yaml)
@@ -29,14 +29,11 @@ terraform {
     equinix = {
       source = "equinix/equinix"
     }
-    metal = {
-      source = "equinix/metal"
-    }
 }
 
 module "example" {
   source = "github.com/equinix-labs/template"
-  # TEMPLATE: replace "template" with the name of the repo after the terraform-equinix- or terraform-metal- prefix.
+  # TEMPLATE: replace "template" with the name of the repo after the terraform-equinix- prefix.
 
   # Published modules can be sourced as:
   # source = "equinix-labs/template/equinix"
