@@ -1,3 +1,7 @@
+terraform {
+  required_version = ">= 1.3"
+}
+
 module "example" {
   # TEMPLATE: Replace this path with the Git repo path or Terraform Registry path
   source = "../../"

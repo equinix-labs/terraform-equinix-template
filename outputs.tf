@@ -22,4 +22,3 @@ output "gateway_id" {
   sensitive   = false
   value       = module.inline_module.metal_gateway_id
 }
-

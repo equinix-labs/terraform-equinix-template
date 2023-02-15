@@ -1,0 +1,36 @@
+name: run-terraform-docs
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  tf-docs:
+    name: TF docs
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    permissions:
+      pull-requests: write
+      id-token: write
+      contents: read
+    steps:
+      - name: Checkout from Github
+        uses: actions/checkout@v3
+        id: actions-checkout
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Run Terraform-docs
+        uses: terraform-docs/gh-actions@v1.0.0
+        with:
+          config-file: .config/.terraform-docs.yaml
+          working-dir: .
+          output-file: README.md
+          output-method: inject
+          recursive: true
+          recursive-path: examples
+          git-push: true
+          git-push-sign-off: true
+          git-push-user-email: ""
+          git-push-user-name: ""
