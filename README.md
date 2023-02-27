@@ -47,6 +47,14 @@ module "example" {
 }
 ```
 
+Install [pre-commit](https://pre-commit.com/#install) with its prerequesites: [python](https://docs.python.org/3/using/index.html) and [pip](https://pip.pypa.io/en/stable/installation/).
+
+Configure pre-commit: `pre-commit install`.
+
+Install required packages: [tflint](https://github.com/terraform-linters/tflint), [tfsec](https://aquasecurity.github.io/tfsec/v1.0.11/getting-started/installation/), [shfmt](https://github.com/mvdan/sh), [shellcheck](https://github.com/koalaman/shellcheck), and [markdownlint](https://github.com/markdownlint/markdownlint).
+
+Run `pre-commit run --all-files` to run the pre-commit hooks before pushing changes.
+
 Run `terraform init -upgrade` and `terraform apply`.
 
 ## Examples
