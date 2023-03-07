@@ -77,33 +77,33 @@ To view examples for how you can leverage this module, please see the [examples]
 
 | Name | Version |
 |------|---------|
-| <a name="provider_equinix"></a> [equinix](#provider\_equinix) | >= 1.8.1 |
+| <a name="provider_equinix"></a> [equinix](#provider\_equinix) | >= 1.8.0 |
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_inline-module"></a> [inline-module](#module\_inline-module) | ./modules/inline-module | n/a |
+| <a name="module_inline_module"></a> [inline\_module](#module\_inline\_module) | ./modules/inline-module | n/a |
 
 ## Resources
 
 | Name | Type |
 |------|------|
-| [equinix_metal_device.example](https://registry.terraform.io/providers/equinix/equinix/latest/docs/resources/metal_device) | resource |
+| [equinix_metal_device.example_device](https://registry.terraform.io/providers/equinix/equinix/latest/docs/resources/metal_device) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_example_auth_token"></a> [example\_auth\_token](#input\_example\_auth\_token) | The example auth token value defines what will be included in the example resource in main.tf. This example is descriptive. | `string` | n/a | yes |
-| <a name="input_example_project_id"></a> [example\_project\_id](#input\_example\_project\_id) | The example project id value defines what will be included in the example resource in main.tf. This example is descriptive. | `string` | n/a | yes |
+| <a name="input_metal_auth_token"></a> [metal\_auth\_token](#input\_metal\_auth\_token) | The example auth token value defines what will be included in the example resource in main.tf. This example is descriptive. | `string` | n/a | yes |
+| <a name="input_metal_project_id"></a> [metal\_project\_id](#input\_metal\_project\_id) | The example project id value defines what will be included in the example resource in main.tf. This example is descriptive. | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| <a name="output_example_device_hostname"></a> [example\_device\_hostname](#output\_example\_device\_hostname) | The example output. In practice, output value reference implicit resource attributes declared in main.tf |
-| <a name="output_example_gateway_id"></a> [example\_gateway\_id](#output\_example\_gateway\_id) | The example output. In practice, output value reference implicit resource attributes declared in main.tf |
+| <a name="output_device_hostname"></a> [device\_hostname](#output\_device\_hostname) | The example output. In practice, output value reference implicit resource attributes declared in main.tf |
+| <a name="output_gateway_id"></a> [gateway\_id](#output\_gateway\_id) | The example output. In practice, output value reference implicit resource attributes declared in main.tf |
 <!-- END_TF_DOCS -->
 ## Contributing
 
