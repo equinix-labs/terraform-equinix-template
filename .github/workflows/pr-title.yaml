@@ -23,8 +23,10 @@ jobs:
           # Configure which types are allowed.
           # Default: https://github.com/commitizen/conventional-commit-types
           types: |
-            fix
             feat
+            perf
+            revert
+            fix
             docs
             ci
             chore
