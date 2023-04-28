@@ -4,20 +4,11 @@ name: generate-release
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - '**/*.tpl'
-      - '**/*.tf'
-      - '.github/workflows/release.yml'
 
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
-    # Skip running release workflow on forks
-    #if: github.repository_owner == 'terraform-equinix-template'
     steps:
       - name: Checkout
         uses: actions/checkout@v3
