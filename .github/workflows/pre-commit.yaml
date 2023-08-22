@@ -3,7 +3,7 @@ name: 'run-pre-commit-hooks'
 
 on:
   pull_request:
-    branches: [main]
+    branches: [main,test-jaxxstorm-action-install-gh-release]
   workflow_dispatch:
   
 concurrency:
