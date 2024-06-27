@@ -2,7 +2,6 @@
 
 <!-- TEMPLATE: Review all "TEMPLATE" comments and remove them when applied. -->
 <!-- TEMPLATE: replace "template" with the name of your project. The prefix "terraform-equinix-" informs the Terraform registry that this project is a Terraform module associated with the Equinix provider, preserve this prefix. -->
-[![Experimental](https://img.shields.io/badge/Stability-Experimental-red.svg)](https://github.com/equinix-labs/standards#about-uniform-standards)
 [![run-pre-commit-hooks](https://github.com/equinix-labs/terraform-equinix-template/actions/workflows/pre-commit.yaml/badge.svg)](https://github.com/equinix-labs/terraform-equinix-template/actions/workflows/pre-commit.yaml)
 [![generate-terraform-docs](https://github.com/equinix-labs/terraform-equinix-template/actions/workflows/documentation.yaml/badge.svg)](https://github.com/equinix-labs/terraform-equinix-template/actions/workflows/documentation.yaml)
 
@@ -12,7 +11,7 @@
 
 ## Usage
 
-This project is experimental and supported by the user community. Equinix does not provide support for this project.
+This project is supported by the user community. Equinix does not provide support for this project.
 
 Install Terraform using the [tfenv](https://github.com/tfutils/tfenv) utility.
 
