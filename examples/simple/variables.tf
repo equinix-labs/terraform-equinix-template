@@ -7,15 +7,15 @@
 # TEMPLATE:
 
 # TEMPLATE: Replace sample variable described below with your own.
-variable "example_metal_project_id" {
+variable "example_equinix_client_id" {
   type        = string
-  description = "The example project id value defines what will be included in the example resource in main.tf. This example is descriptive."
-  sensitive   = false
+  description = "The example client id value defines what will be included in the example resource in main.tf. This example is descriptive."
+  sensitive   = true
 }
 
 # TEMPLATE: Replace sample variable described below with your own.
-variable "example_metal_auth_token" {
+variable "example_equinix_client_secret" {
   type        = string
-  description = "The example auth token value defines what will be included in the example resource in main.tf. This example is descriptive."
+  description = "The example client secret value defines what will be included in the example resource in main.tf. This example is descriptive."
   sensitive   = true
 }

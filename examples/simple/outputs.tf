@@ -10,15 +10,15 @@
 # TEMPLATE:
 
 # TEMPLATE: Replace sample output described below with your own.
-output "example_device_hostname" {
+output "example_port_name" {
   description = "The example output. In practice, output value reference implicit resource attributes declared in main.tf"
   sensitive   = false
-  value       = module.example.device_hostname
+  value       = module.example.example_port_name
 }
 
 # TEMPLATE: Replace sample output described below with your own.
-output "example_gateway_id" {
+output "example_network_account_id" {
   description = "The example output. In practice, output value reference implicit resource attributes declared in main.tf"
   sensitive   = false
-  value       = module.example.gateway_id
+  value       = module.example.network_account_id
 }

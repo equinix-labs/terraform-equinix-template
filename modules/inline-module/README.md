@@ -32,18 +32,17 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [equinix_metal_gateway.inline_module_gateway](https://registry.terraform.io/providers/equinix/equinix/latest/docs/resources/metal_gateway) | resource |
-| [equinix_metal_vlan.inline_module_vlan](https://registry.terraform.io/providers/equinix/equinix/latest/docs/resources/metal_vlan) | resource |
+| [equinix_network_account.example_account](https://registry.terraform.io/providers/equinix/equinix/latest/docs/data-sources/network_account) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_inline_module_project_id"></a> [inline\_module\_project\_id](#input\_inline\_module\_project\_id) | The example project id value defines what will be included in the example resource in main.tf. This example is descriptive. | `string` | n/a | yes |
+| <a name="input_inline_module_metro_code"></a> [inline\_module\_metro\_code](#input\_inline\_module\_metro\_code) | The example metro code value defines what will be included in the example resource in main.tf. This example is descriptive. | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| <a name="output_metal_gateway_id"></a> [metal\_gateway\_id](#output\_metal\_gateway\_id) | The example output. In practice, output value reference implicit resource attributes declared in main.tf |
+| <a name="output_network_account_id"></a> [network\_account\_id](#output\_network\_account\_id) | The example output. In practice, output value reference implicit resource attributes declared in main.tf |
 <!-- END_TF_DOCS -->

@@ -7,6 +7,6 @@ module "example" {
   source = "../../"
 
   # Define any required variables
-  metal_project_id = var.example_metal_project_id
-  metal_auth_token = var.example_metal_auth_token
+  equinix_client_id     = var.example_equinix_client_id
+  equinix_client_secret = var.example_equinix_client_secret
 }

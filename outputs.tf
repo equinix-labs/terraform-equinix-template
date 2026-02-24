@@ -10,15 +10,15 @@
 # TEMPLATE:
 
 # TEMPLATE: Replace sample output described below with your own.
-output "device_hostname" {
+output "example_port_name" {
   description = "The example output. In practice, output value reference implicit resource attributes declared in main.tf"
   sensitive   = false
-  value       = equinix_metal_device.example_device.hostname
+  value       = data.equinix_fabric_ports.example_ports.data[0].name
 }
 
 # TEMPLATE: Replace sample output described below with your own.
-output "gateway_id" {
+output "network_account_id" {
   description = "The example output. In practice, output value reference implicit resource attributes declared in main.tf"
   sensitive   = false
-  value       = module.inline_module.metal_gateway_id
+  value       = module.inline_module.network_account_id
 }
