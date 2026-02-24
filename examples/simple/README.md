@@ -35,13 +35,13 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_example_metal_auth_token"></a> [example\_metal\_auth\_token](#input\_example\_metal\_auth\_token) | The example auth token value defines what will be included in the example resource in main.tf. This example is descriptive. | `string` | n/a | yes |
-| <a name="input_example_metal_project_id"></a> [example\_metal\_project\_id](#input\_example\_metal\_project\_id) | The example project id value defines what will be included in the example resource in main.tf. This example is descriptive. | `string` | n/a | yes |
+| <a name="input_example_equinix_client_id"></a> [example\_equinix\_client\_id](#input\_example\_equinix\_client\_id) | The example client id value defines what will be included in the example resource in main.tf. This example is descriptive. | `string` | n/a | yes |
+| <a name="input_example_equinix_client_secret"></a> [example\_equinix\_client\_secret](#input\_example\_equinix\_client\_secret) | The example client secret value defines what will be included in the example resource in main.tf. This example is descriptive. | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| <a name="output_example_device_hostname"></a> [example\_device\_hostname](#output\_example\_device\_hostname) | The example output. In practice, output value reference implicit resource attributes declared in main.tf |
-| <a name="output_example_gateway_id"></a> [example\_gateway\_id](#output\_example\_gateway\_id) | The example output. In practice, output value reference implicit resource attributes declared in main.tf |
+| <a name="output_example_network_account_id"></a> [example\_network\_account\_id](#output\_example\_network\_account\_id) | The example output. In practice, output value reference implicit resource attributes declared in main.tf |
+| <a name="output_example_port_name"></a> [example\_port\_name](#output\_example\_port\_name) | The example output. In practice, output value reference implicit resource attributes declared in main.tf |
 <!-- END_TF_DOCS -->

@@ -10,8 +10,8 @@
 #
 
 # TEMPLATE: Replace sample output described below with your own.
-output "metal_gateway_id" {
+output "network_account_id" {
   description = "The example output. In practice, output value reference implicit resource attributes declared in main.tf"
   sensitive   = false
-  value       = equinix_metal_gateway.inline_module_gateway.id
+  value       = data.equinix_network_account.example_account.id
 }

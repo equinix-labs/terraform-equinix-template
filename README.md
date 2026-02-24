@@ -93,21 +93,21 @@ To view examples for how you can leverage this module, please see the [examples]
 
 | Name | Type |
 |------|------|
-| [equinix_metal_device.example](https://registry.terraform.io/providers/equinix/equinix/latest/docs/resources/metal_device) | resource |
+| [equinix_fabric_ports.example_ports](https://registry.terraform.io/providers/equinix/equinix/latest/docs/data-sources/fabric_ports) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_example_auth_token"></a> [example\_auth\_token](#input\_example\_auth\_token) | The example auth token value defines what will be included in the example resource in main.tf. This example is descriptive. | `string` | n/a | yes |
-| <a name="input_example_project_id"></a> [example\_project\_id](#input\_example\_project\_id) | The example project id value defines what will be included in the example resource in main.tf. This example is descriptive. | `string` | n/a | yes |
+| <a name="input_equinix_client_id"></a> [equinix\_client\_id](#input\_equinix\_client\_id) | The example client id value defines what will be included in the example resource in main.tf. This example is descriptive. | `string` | n/a | yes |
+| <a name="input_equinix_client_secret"></a> [equinix\_client\_secret](#input\_equinix\_client\_secret) | The example client secret value defines what will be included in the example resource in main.tf. This example is descriptive. | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| <a name="output_example_device_hostname"></a> [example\_device\_hostname](#output\_example\_device\_hostname) | The example output. In practice, output value reference implicit resource attributes declared in main.tf |
-| <a name="output_example_gateway_id"></a> [example\_gateway\_id](#output\_example\_gateway\_id) | The example output. In practice, output value reference implicit resource attributes declared in main.tf |
+| <a name="output_example_port_name"></a> [example\_port\_name](#output\_example\_port\_name) | The example output. In practice, output value reference implicit resource attributes declared in main.tf |
+| <a name="output_network_account_id"></a> [network\_account\_id](#output\_network\_account\_id) | The example output. In practice, output value reference implicit resource attributes declared in main.tf |
 <!-- END_TF_DOCS -->
 ## Contributing
 

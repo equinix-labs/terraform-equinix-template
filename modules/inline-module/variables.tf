@@ -7,8 +7,8 @@
 #
 
 # TEMPLATE: Replace sample variable described below with your own.
-variable "inline_module_project_id" {
+variable "inline_module_metro_code" {
   type        = string
-  description = "The example project id value defines what will be included in the example resource in main.tf. This example is descriptive."
+  description = "The example metro code value defines what will be included in the example resource in main.tf. This example is descriptive."
   sensitive   = false
 }

@@ -23,15 +23,7 @@ terraform {
 }
 
 # TEMPLATE: Replace sample resource described below with your own.
-resource "equinix_metal_vlan" "inline_module_vlan" {
-  description = "VLAN in SV"
-  metro       = "sv"
-  project_id  = var.inline_module_project_id
-}
-
-# TEMPLATE: Replace sample resource described below with your own.
-resource "equinix_metal_gateway" "inline_module_gateway" {
-  project_id               = var.inline_module_project_id
-  vlan_id                  = equinix_metal_vlan.inline_module_vlan.id
-  private_ipv4_subnet_size = 8
+data "equinix_network_account" "example_account" {
+  metro_code = var.inline_module_metro_code
+  status     = "Active"
 }
